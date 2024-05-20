@@ -12,53 +12,53 @@ export default function Header() {
   return (
     <>
       <Navbar className="bg-main py-3 header" collapseOnSelect expand="lg">
-        <Container className="m-0 px-4">
-          <Navbar.Brand className="p-0" href="/login">
-            <Image
-              src={logo.src}
-              width={160}
-              height={90}
-              alt="Picture of the author"
-            ></Image>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav">
-            <FontAwesomeIcon icon={faBars} />
-          </Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="m-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
-              <Nav.Link href="#pricing">About Us</Nav.Link>
-              <Nav.Link href="#features">Products</Nav.Link>
-              <Nav.Link href="#pricing">Services</Nav.Link>
-              <Nav.Link href="#AboutUs">Industries </Nav.Link>
-              <Nav.Link href="#AboutUs">Business </Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link className="px-4">
-                <Button
-                  className="btn btn-info"
-                  title="Login"
-                  outline="false"
-                  opacity="true"
-                  onClick={() => router.push("/login")}
-                >
-                  Login
-                </Button>
-              </Nav.Link>
-              <Nav.Link className="px-2">
-                <Button
-                  className="btn btn-info"
-                  title="Login"
-                  outline="false"
-                  opacity="true"
-                  onClick={() => router.push("/login")}
-                >
-                  Request For Quote
-                </Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+        {/* <Container className="m-0 px-4"> */}
+        <Navbar.Brand className="p-0" href="/login">
+          <Image
+            src={logo.src}
+            width={180}
+            height={130}
+            alt="Picture of the author"
+          ></Image>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <FontAwesomeIcon icon={faBars} />
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="m-auto">
+            <Nav.Link href="#home" className="fw-bold">Home</Nav.Link>
+            <Nav.Link href="#pricing" className="fw-bold">Brands</Nav.Link>
+            <Nav.Link href="#products" className="fw-bold">Products</Nav.Link>
+            <Nav.Link href="#services" className="fw-bold">Services</Nav.Link>
+            <Nav.Link href="#industries" className="fw-bold">Industries </Nav.Link>
+            <Nav.Link href="#business" className="fw-bold">Business </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link className="px-4">
+              <Button
+                className="btn btn-warning"
+                title="Login"
+                outline="false"
+                opacity="true"
+                onClick={() => router.push("/login")}
+              >
+                Login
+              </Button>
+            </Nav.Link>
+            <Nav.Link className="px-2">
+              <Button
+                className="btn btn-warning"
+                title="Login"
+                outline="false"
+                opacity="true"
+                onClick={() => router.push("")}
+              >
+                Request For Quote
+              </Button>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        {/* </Container> */}
       </Navbar>
       {/* <div className="py-4">
         {showSignup && <Signuppage />}
