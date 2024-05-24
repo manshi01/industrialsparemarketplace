@@ -16,8 +16,8 @@ export default function Header() {
         <Navbar.Brand className="p-0" href="/login">
           <Image
             src={logo.src}
-            width={180}
-            height={130}
+            width={200}
+            height={120}
             alt="Picture of the author"
           ></Image>
         </Navbar.Brand>
@@ -26,17 +26,17 @@ export default function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="#home" className="fw-bold">Home</Nav.Link>
-            <Nav.Link href="#pricing" className="fw-bold">Brands</Nav.Link>
-            <Nav.Link href="#products" className="fw-bold">Products</Nav.Link>
-            <Nav.Link href="#services" className="fw-bold">Services</Nav.Link>
-            <Nav.Link href="#industries" className="fw-bold">Industries </Nav.Link>
-            <Nav.Link href="#business" className="fw-bold">Business </Nav.Link>
+            <Nav.Link href="#home" className="fw-bold fs-5">Home</Nav.Link>
+            <Nav.Link href="#pricing" className="fw-bold fs-5">Brands</Nav.Link>
+            <Nav.Link href="#products" className="fw-bold fs-5">Products</Nav.Link>
+            <Nav.Link href="#services" className="fw-bold fs-5">Services</Nav.Link>
+            <Nav.Link href="#industries" className="fw-bold fs-5">Industries </Nav.Link>
+            <Nav.Link href="#business" className="fw-bold fs-5">Business </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link className="px-4">
               <Button
-                className="btn btn-warning"
+                className="btn btn-warning fs-5"
                 title="Login"
                 outline="false"
                 opacity="true"
@@ -47,7 +47,7 @@ export default function Header() {
             </Nav.Link>
             <Nav.Link className="px-2">
               <Button
-                className="btn btn-warning"
+                className="btn btn-warning fs-5"
                 title="Login"
                 outline="false"
                 opacity="true"

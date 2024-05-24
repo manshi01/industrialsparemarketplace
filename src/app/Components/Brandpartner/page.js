@@ -1,41 +1,24 @@
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import Lightbox from "./Lightbox";
 
 function Brandimg() {
+  const handleClose = () => setShow(false);
+  const images = [
+    '/Users/manshikogo123/Desktop/my project/project/procurmart/public/BBL-removebg-preview.png',
+    'https://via.placeholder.com/300',
+
+  ];
   return (
-    <div className="d-flex flex-column align-items-center">
-      <p className="text-center m-4">Our Brand Partner</p>
-      <div className="m-4 d-flex flex-wrap justify-content-center gap-5">
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
-        </div>
-        <div className="p-2 m-0">
-          <Image src="/motorse.png" width={164} height={164} />
+    <>
+      <div className="d-flex ms-2 container ">
+        <div className="col-6 col-md-4 col-lg-3 mb-4" >
+          <Lightbox />
         </div>
       </div>
-    </div>
+    </>
   );
+
 }
 
 export default Brandimg;
