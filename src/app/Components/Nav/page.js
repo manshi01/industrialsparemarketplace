@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
 import logo from "../../assets/images/logo.png";
+import "@/app/assets/zoomable.css";
 export default function Header() {
   const router = useRouter();
 
@@ -36,7 +37,7 @@ export default function Header() {
           <Nav>
             <Nav.Link className="px-4">
               <Button
-                className="btn btn-warning fs-5"
+                className="btn btn-warning fs-5 button"
                 title="Login"
                 outline="false"
                 opacity="true"
@@ -47,7 +48,7 @@ export default function Header() {
             </Nav.Link>
             <Nav.Link className="px-2">
               <Button
-                className="btn btn-warning fs-5"
+                className="btn btn-warning fs-5 button"
                 title="Login"
                 outline="false"
                 opacity="true"

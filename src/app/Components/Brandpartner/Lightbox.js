@@ -20,13 +20,13 @@ const ZoomableImage = () => {
     };
 
     return (
-        <div className="d-flex  gap-5">
+        <div className="d-flex gap-5 p-5 m-2 ">
             {images.map((image, index) => (
                 <div key={index} onClick={() => handleZoom(index)} className="zoomable-image-wrapper">
                     <Image
                         src={image.src}
-                        width={300}
-                        height={100}
+                        width={200}
+                        height={80}
                         alt={image.alt}
                         className={`zoomable-image ${zoomedImageIndex === index ? 'zoomed' : ''}`}
                     />

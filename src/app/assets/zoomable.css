@@ -5,8 +5,8 @@
   }
   
   .zoomable-image.zoomed {
-    transform: scale(2); /* Adjust the scale factor as needed */
-    z-index: 1000;
+    transform: scale(0.5); /* Adjust the scale factor as needed */
+    z-index: 900;
     position: relative;
   }
   

@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(219, 230, 246);
+    color: black;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .footer-section button {
+    padding: 5px 10px;
+  }
+  .button
+  {
+    background-color: rgb(196, 84, 0);;
+  }
