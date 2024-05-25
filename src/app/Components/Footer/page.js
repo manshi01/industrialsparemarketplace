@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="footer-section">
         <h4>Our Products</h4>
         <ul>
-          <li>Product 1</li>
-          <li>Product 2</li>
-          <li>Product 3</li>
+          <li>Motors</li>
+          <li>Sensors</li>
+          <li>GearBoxes</li>
         </ul>
       </div>
       <div className="footer-section">

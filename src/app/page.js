@@ -8,22 +8,25 @@ import Brandimg from "./Components/Brandpartner/page";
 import Caroudsel from "./Components/Carousel/page";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./Components/Footer/page";
+// import Loginpage from "@/app/app/login/page"
 function MyCarousel() {
   return (
     <>
-    <Caroudsel/>
+      <Caroudsel />
       <div className="text-center fw-bold fs-3 mt-4">Products</div>
       {/* <div className=" d-flex col-12 cursor-pointer  "> */}
-        <Contentcard />
+      <Contentcard />
       {/* </div> */}
       <div className="text-center fw-bold fs-3 mt-4">Brands we deal with</div>
       <div className="mt-5">
         <Brandimg />
+        {/* <Brandimg/> */}
       </div>
       <div className="m-2 p-2">
-      <Footer/>
+        <Footer />
+        {/* <Loginpage/> */}
       </div>
-    
+
     </>
   );
 }

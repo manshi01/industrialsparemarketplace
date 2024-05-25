@@ -34,5 +34,18 @@
   }
   .button
   {
-    background-color: rgb(196, 84, 0);;
+    background-color: rgb(196, 84, 0);
+    color: black; /* Default font color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  .button.active {
+    color: red; /* Font color when the button is active */
+  }
+  
+  .button:hover {
+    background-color: rgb(196, 84, 0); /* Background color on hover */
   }

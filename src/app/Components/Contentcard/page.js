@@ -6,7 +6,8 @@ import pump from "@/app/assets/image/pumpspare.png"
 import acc from "@/app/assets/image/accumulator.png"
 import swich from "@/app/assets/image/swich.png"
 import motar from "@/app/assets/image/motorse.png"
-
+// import valves from "@/app/assets/image/valves.png"
+import pros from "@/app/assets/image/proximity.png"
 function contentcard() {
   return (
     <>
@@ -91,7 +92,7 @@ function contentcard() {
         <div className="col-3">
           <Image
             className="d-block "
-            src={acc.src}
+            src={pros.src}
             alt="First slide"
             width={250}
             height={200}

@@ -1,6 +1,6 @@
 .header {
     background-image: radial-gradient(
-      rgba(0, 0, 0, 0) 1px,
+      /* rgba(0, 0, 0, 0) 1px, */
       var(--background) 1px
     );
     background-size: 4px 4px;

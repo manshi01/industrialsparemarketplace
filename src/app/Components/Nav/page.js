@@ -7,9 +7,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
 import logo from "../../assets/images/logo.png";
 import "@/app/assets/zoomable.css";
+import loginpage from "@/app/app/login/page";
 export default function Header() {
   const router = useRouter();
-
+  const handleClick = () => {
+    window.location.href = "https://workspace.google.com/products/forms/";
+  }
   return (
     <>
       <Navbar className="bg-main py-3 header" collapseOnSelect expand="lg">
@@ -35,9 +38,9 @@ export default function Header() {
             <Nav.Link href="#business" className="fw-bold fs-5">Business </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link className="px-4">
+            {/* <Nav.Link className="px-4">
               <Button
-                className="btn btn-warning fs-5 button"
+                className=" fs-5 button"
                 title="Login"
                 outline="false"
                 opacity="true"
@@ -45,14 +48,14 @@ export default function Header() {
               >
                 Login
               </Button>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="px-2">
               <Button
-                className="btn btn-warning fs-5 button"
+                className=" fs-5 button"
                 title="Login"
                 outline="false"
                 opacity="true"
-                onClick={() => router.push("")}
+                onClick={ handleClick}
               >
                 Request For Quote
               </Button>
