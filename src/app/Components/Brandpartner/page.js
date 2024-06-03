@@ -1,5 +1,7 @@
+'use client'
 import React, { useState } from "react";
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import Lightbox from "./Lightbox";
 
 function Brandimg() {

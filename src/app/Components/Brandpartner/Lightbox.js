@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import "@/app/assets/zoomable.css";
 import Image from 'next/image';

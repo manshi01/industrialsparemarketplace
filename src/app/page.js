@@ -22,7 +22,7 @@ function MyCarousel() {
         <Brandimg />
         {/* <Brandimg/> */}
       </div>
-      <div className="m-2 p-2">
+      <div className="">
         <Footer />
         {/* <Loginpage/> */}
       </div>

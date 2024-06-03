@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from 'react-bootstrap/Image';
 import filter from "@/app/assets/image/filter.png"
 import gear from "@/app/assets/image/gearbox.png"
 import pump from "@/app/assets/image/pumpspare.png"
@@ -15,7 +15,7 @@ function contentcard() {
         <div className="col-3">
           <Image
             className="d-block "
-            src={motar.src}
+            src="/motar.png"
             alt="First slide"
             width={250}
             height={200}

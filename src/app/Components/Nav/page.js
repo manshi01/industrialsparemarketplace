@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
-import Image from "next/image";
+import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
 import "@/app/assets/zoomable.css";
-import loginpage from "@/app/app/login/page";
 export default function Header() {
   const router = useRouter();
   const handleClick = () => {
@@ -19,7 +18,8 @@ export default function Header() {
         {/* <Container className="m-0 px-4"> */}
         <Navbar.Brand className="p-0" href="/login">
           <Image
-            src={logo.src}
+            className="d-block "
+            src={"/logo.png"}
             width={200}
             height={120}
             alt="Picture of the author"
@@ -55,7 +55,7 @@ export default function Header() {
                 title="Login"
                 outline="false"
                 opacity="true"
-                onClick={ handleClick}
+                onClick={handleClick}
               >
                 Request For Quote
               </Button>
