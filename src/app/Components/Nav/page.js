@@ -10,7 +10,7 @@ import "@/app/assets/zoomable.css";
 export default function Header() {
   const router = useRouter();
   const handleClick = () => {
-    window.location.href = "https://workspace.google.com/products/forms/";
+    window.location.href = "https://forms.gle/aAknas4Var858KqN9";
   }
   return (
     <>

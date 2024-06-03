@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import "@/app/assets/zoomable.css";
-import Image from 'next/image';
+import Image from 'react-bootstrap/Image';
 
 const images = [
     { src: "/BBL.png", alt: "BBL" },

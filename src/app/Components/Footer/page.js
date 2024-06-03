@@ -1,43 +1,4 @@
-// import React from 'react';
-// import "@/app/assets/footer.css";
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <div className="footer-section">
-//         <h4>Company</h4>
-//         <ul>
-//           <li>About Us</li>
-//           <li>Careers</li>
-//           <li>Contact Us</li>
-//         </ul>
-//       </div>
-//       <div className="footer-section">
-//         <h4>Our Products</h4>
-//         <ul>
-//           <li>Motors</li>
-//           <li>Sensors</li>
-//           <li>GearBoxes</li>
-//         </ul>
-//       </div>
-//       <div className="footer-section">
-//         <h4>Our Policies</h4>
-//         <ul>
-//           <li>Privacy Policy</li>
-//           <li>Terms of Service</li>
-//           <li>Refund Policy</li>
-//         </ul>
-//       </div>
-//       <div className="footer-section">
-//         <h4>Subscribe</h4>
-//         <input type="email" placeholder="Enter your email" />
-//         <button>Subscribe</button>
-//       </div>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
+"use client"
 import React from 'react';
 import {
   MDBFooter,
@@ -101,7 +62,7 @@ export default function App() {
           </form>
         </section>
 
-        <section className='mb-4'>
+        {/* <section className='mb-4'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
             voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
@@ -219,7 +180,7 @@ export default function App() {
               </ul>
             </MDBCol>
           </MDBRow>
-        </section>
+        </section> */}
       </MDBContainer>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
