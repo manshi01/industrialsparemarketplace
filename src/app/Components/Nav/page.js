@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Container, Nav, Navbar, Button } from "react-bootstrap";
+import { Container, Nav, Navbar, Button, Dropdown, DropdownButton } from "react-bootstrap";
 import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -30,12 +30,48 @@ export default function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link href="#home" className="fw-bold fs-5">Home</Nav.Link>
-            <Nav.Link href="#pricing" className="fw-bold fs-5">Brands</Nav.Link>
-            <Nav.Link href="#products" className="fw-bold fs-5">Products</Nav.Link>
-            <Nav.Link href="#services" className="fw-bold fs-5">Services</Nav.Link>
-            <Nav.Link href="#industries" className="fw-bold fs-5">Industries </Nav.Link>
-            <Nav.Link href="#business" className="fw-bold fs-5">Business </Nav.Link>
+            <Nav.Link href="#home" className="fw-bold  ">Home</Nav.Link>
+            <Dropdown>
+              <Dropdown.Toggle className="fw-bold custom-dropdown-toggle border-0" id="dropdown-basic">
+                Brands
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
+                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
+                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown>
+              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
+                Products
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#brand1">Motors</Dropdown.Item>
+                <Dropdown.Item href="#brand2"> </Dropdown.Item>
+                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown>
+              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
+                Services
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
+                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
+                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown>
+              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
+                Industries
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
+                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
+                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Nav.Link href="#business" className="fw-bold ">Business </Nav.Link>
           </Nav>
           <Nav>
             {/* <Nav.Link className="px-4">

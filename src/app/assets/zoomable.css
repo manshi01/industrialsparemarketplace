@@ -9,4 +9,34 @@
     z-index: 900;
     position: relative;
   }
-  
+  /* In your CSS file, e.g., zoomable.css */
+.custom-dropdown-toggle {
+  background-color: white !important;
+  color: black !important;
+  border: none;
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus,
+.custom-dropdown-toggle:active {
+  background-color: white !important;
+  color: black !important;
+  border: none;
+}
+.button
+{
+  background-color: rgb(196, 84, 0);
+  color: black; /* Default font color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.button.active {
+  color: red; /* Font color when the button is active */
+}
+
+.button:hover {
+  background-color: rgb(196, 84, 0); /* Background color on hover */
+}

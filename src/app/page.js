@@ -8,6 +8,7 @@ import Brandimg from "./Components/Brandpartner/page";
 import Caroudsel from "./Components/Carousel/page";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./Components/Footer/page";
+import Banner from "./Components/Banner/page";
 // import Loginpage from "@/app/app/login/page"
 function MyCarousel() {
   return (
@@ -21,6 +22,9 @@ function MyCarousel() {
       <div className="mt-5">
         <Brandimg />
         {/* <Brandimg/> */}
+      </div>
+      <div className="mb-4">
+        <Banner />
       </div>
       <div className="">
         <Footer />
