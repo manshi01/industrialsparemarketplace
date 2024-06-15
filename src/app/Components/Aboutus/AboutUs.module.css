@@ -1,0 +1,21 @@
+/* components/AboutUs.module.css */
+.aboutUsContainer {
+    padding: 20px;
+  }
+  .heading1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+.heading2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+.para {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }

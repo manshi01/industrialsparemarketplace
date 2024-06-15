@@ -7,40 +7,40 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function carousel() {
   return (
     <div>
-    <Carousel className="w-100">
-      <Carousel.Item>
-        <Image
-          className="d-block w-100  "
-          src="/eng.png"
-          alt="First slide"
-          width={1300}
-          height={500}
+      <Carousel className="w-100">
+        <Carousel.Item>
+          <Image
+            className="d-block w-100  "
+            src="/sugarplant.png"
+            alt="First slide"
+            width={1300}
+            height={700}
 
-        />
-        <Carousel.Caption >
-          <h3 className=" fs-3 ">Motor Brands We Deal In</h3>
-          <p className="">
-            We Deal with End to End Products Range of these Brands.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100 "
-          src="/electro.png"
-          alt="First slide"
-          width={1300}
-          height={500}
-        />
-        <Carousel.Caption>
-          <h3 className="fs-3 ">Major Brands We Deal In</h3>
-          <p className=" fs-3">
-            We Deal with End to End Products Range of these Brands.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  </div>
+          />
+          <Carousel.Caption >
+            <h3 className=" fs-1 ">We're One Stop for End to End Global Industrial Procurement Solutions</h3>
+            <p className="fs-4">
+              We Help Our Customers Optimise on their Costs (Atleast 20%) & Delivery Time (Atleast 30%) by Procuring from Low Cost Countries and Managing their End to End Logistics to Deliver On Time.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Image
+            className="d-block w-100 "
+            src="/automation.jpg"
+            alt="First slide"
+            width={1300}
+            height={700}
+          />
+          <Carousel.Caption>
+            <h3 className="fs-1 ">We're One Stop for End to End Global Industrial Procurement Solutions</h3>
+            <p className=" fs-4">
+              We Help Our Customers Optimise on their Costs (Atleast 20%) & Delivery Time (Atleast 30%) by Procuring from Low Cost Countries and Managing their End to End Logistics to Deliver On Time.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   )
 }
 

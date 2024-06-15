@@ -1,0 +1,11 @@
+/* pages/brands.module.css */
+.imageContainer {
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageContainer:hover {
+    transform: scale(1.1);
+  }
