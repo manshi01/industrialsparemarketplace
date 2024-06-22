@@ -14,7 +14,7 @@ function MyCarousel() {
   return (
     <>
       <Caroudsel />
-      <div className="text-center fw-bold fs-3 mt-4">Products</div>
+      <div className="text-center fw-bold fs-3 mt-4"> Our Products</div>
       {/* <div className=" d-flex col-12 cursor-pointer  "> */}
       <Contentcard />
       {/* </div> */}

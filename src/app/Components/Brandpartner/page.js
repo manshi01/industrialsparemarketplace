@@ -1,26 +1,18 @@
 'use client'
-import React, { useState } from "react";
-import { Container, Row, Col } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
+import React from "react";
 import Lightbox from "./Lightbox";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Brandimg() {
-  const handleClose = () => setShow(false);
-  const images = [
-    '/Users/manshikogo123/Desktop/my project/project/procurmart/public/BBL-removebg-preview.png',
-    'https://via.placeholder.com/300',
-
-  ];
   return (
-    <>
-      <div className="d-flex ms-2 container ">
-        <div className="col-6 col-md-4 col-lg-3 mb-4" >
+    <div className="container my-4">
+      <div className="row">
+        <div className="col-12">
           <Lightbox />
         </div>
       </div>
-    </>
+    </div>
   );
-
 }
 
 export default Brandimg;

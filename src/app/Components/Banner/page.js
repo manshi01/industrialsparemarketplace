@@ -1,38 +1,49 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTruckFast, faMobile, faMessage, faVoicemail } from '@fortawesome/free-solid-svg-icons'
-function Banner() {
-    return (
-        <div className='d-flex align-items-center justify-content-between  p-4 m-2' style={{ backgroundColor: "#dddddd" }}>
-            <div className='d-flex flex-column col-3'>
-                <div className='p-2'>
-                    <FontAwesomeIcon icon={faTruckFast} className='fa-xl align-self-center' />
-                </div>
-                <div className='p-2 fw-bold'>Door to Door hassle Free Shipping
-                </div>
-            </div>
-            <div className='d-flex flex-column col-3'>
-                <div className='p-2'>
-                    <FontAwesomeIcon icon={faMobile} className='fa-xl align-self-center' />
-                </div>
-                <div className='p-2 fw-bold'>Give us a call at 9555413550
-                </div>
-            </div>
-            <div className='d-flex flex-column col-3'>
-                <div className='p-2'>
-                    <FontAwesomeIcon icon={faMessage} className='fa-xl align-self-center' />
-                </div>
-                <div className='p-2 fw-bold'>Chat with Us
-                </div>
-            </div>
-            <div className='d-flex flex-column col-3'>
-                <div className='p-2'>
-                    <FontAwesomeIcon icon={faVoicemail} className='fa-xl align-self-center' />
-                </div>
-                <div className='p-2 fw-bold'>Email Us
-                </div>
-            </div>
+import Link from 'next/link'
 
+const Banner = () => {
+    return (
+        <div className="container-fluid p-4" style={{ backgroundColor: "#dddddd" }}>
+            <div className="row text-center">
+                <div className="col-12 col-md-3 mb-4 mb-md-0">
+                    <div className="p-2">
+                        <FontAwesomeIcon icon={faTruckFast} className="fa-2x mb-2" />
+                        <div className="fw-bold">Door to Door Hassle Free Shipping</div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-3 mb-4 mb-md-0">
+                    <div className="p-2">
+                        <FontAwesomeIcon icon={faMobile} className="fa-2x mb-2" />
+                        <div className="fw-bold">Give us a call at
+                            <Link href="tel:+919555413550" className="d-block">
+                                +91 9555413550
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-3 mb-4 mb-md-0">
+                    <div className="p-2">
+                        <FontAwesomeIcon icon={faMessage} className="fa-2x mb-2" />
+                        <div className="fw-bold">Chat with Us
+                            <Link href="tel:+919555413550" className="d-block">
+                                +91 9555413550
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-3 mb-4 mb-md-0">
+                    <div className="p-2">
+                        <FontAwesomeIcon icon={faVoicemail} className="fa-2x mb-2" />
+                        <div className="fw-bold">Email Us on
+                            <Link href="mailto:industrialsparesmarketplace@gmail.com" className="d-block">
+                                industrialsparesmarketplace@gmail.com
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

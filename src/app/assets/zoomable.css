@@ -1,42 +1,46 @@
-/* ZoomableImage.css */
-.zoomable-image {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .zoomable-image.zoomed {
-    transform: scale(0.5); /* Adjust the scale factor as needed */
-    z-index: 900;
-    position: relative;
-  }
-  /* In your CSS file, e.g., zoomable.css */
-.custom-dropdown-toggle {
-  background-color: white !important;
-  color: black !important;
-  border: none;
-}
-
-.custom-dropdown-toggle:hover,
-.custom-dropdown-toggle:focus,
-.custom-dropdown-toggle:active {
-  background-color: white !important;
-  color: black !important;
-  border: none;
-}
-.button
-{
-  background-color: rgb(196, 84, 0);
-  color: black; /* Default font color */
-  border: none;
-  padding: 10px 20px;
+.zoomable-image-wrapper {
   cursor: pointer;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-.button.active {
-  color: red; /* Font color when the button is active */
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  position: relative;
+  width: 100%;
+  max-width: 200px; /* Set a max-width to control image size */
+  height: auto;
+  flex: 1 0 21%; /* Control the number of items per row */
+  margin: 10px;
 }
 
-.button:hover {
-  background-color: rgb(196, 84, 0); /* Background color on hover */
+.zoomable-image-wrapper:hover {
+  transform: scale(0.5);
+}
+
+.zoomable-image {
+  transition: transform 0.3s;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.zoomed {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5); /* Center the zoomed image */
+}
+
+@media (max-width: 768px) {
+  .zoomable-image-wrapper {
+      width: 100%;
+      flex: 1 0 46%; /* Adjust for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .zoomable-image-wrapper {
+      flex: 1 0 21%; /* Adjust for larger screens */
+  }
 }

@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
+
 // import logo from "../../assets/images/logo.png";
 import "@/app/assets/zoomable.css";
 export default function Header() {
@@ -12,6 +13,10 @@ export default function Header() {
   const handleClick = () => {
     window.open("https://forms.gle/aAknas4Var858KqN9", "_blank");
   }
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
+
   return (
     <>
       <Navbar className="bg-main py-3 header" collapseOnSelect expand="lg">
@@ -29,55 +34,38 @@ export default function Header() {
           <FontAwesomeIcon icon={faBars} />
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="m-auto">
-            <Nav.Link href="homepage" className="fw-bold fs-4 ">Home</Nav.Link>
-            <Nav.Link href="aboutus" className="fw-bold fs-4  ">About Us</Nav.Link>
-            {/* <Dropdown>
-              <Dropdown.Toggle className="fw-bold custom-dropdown-toggle border-0" id="dropdown-basic">
-                About Us
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
-                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
-                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown> */}
-            {/* <Dropdown>
-              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
-                Products
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#brand1">Motors</Dropdown.Item>
-                <Dropdown.Item href="#brand2"> </Dropdown.Item>
-                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown>
-              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
-                Services
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
-                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
-                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown>
-              <Dropdown.Toggle className="fw-bold  custom-dropdown-toggle border-0" id="dropdown-basic">
-                Brands
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#brand1">Brand 1</Dropdown.Item>
-                <Dropdown.Item href="#brand2">Brand 2</Dropdown.Item>
-                <Dropdown.Item href="#brand3">Brand 3</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown> */}
-            <Nav.Link href="product" className="fw-bold fs-4  "> Products</Nav.Link>
-            <Nav.Link href="services" className="fw-bold fs-4  ">Services</Nav.Link>
-            <Nav.Link href="brands" className="fw-bold fs-4  ">Brands</Nav.Link>
-            <Nav.Link href="industries" className="fw-bold fs-4 ">Industries </Nav.Link>
-            <Nav.Link href="contactus" className="fw-bold fs-4 ">Contact us </Nav.Link>
-          </Nav>
+          {/* <Nav className="m-auto">
+            <Nav.Link href="/homepage" className="fw-bold fs-4 ">Home</Nav.Link>
+            <Nav.Link href="/aboutus" className="fw-bold fs-4  ">About Us</Nav.Link>
+            <Nav.Link href="/product" className="fw-bold fs-4  "> Products</Nav.Link>
+            <Nav.Link href="/services" className="fw-bold fs-4  ">Services</Nav.Link>
+            <Nav.Link href="/brands" className="fw-bold fs-4  ">Brands</Nav.Link>
+            <Nav.Link href="/industries" className="fw-bold fs-4 ">Industries </Nav.Link>
+            <Nav.Link href="/contactus" className="fw-bold fs-4 ">Contact us </Nav.Link>
+          </Nav> */}
+              <Nav className="m-auto">
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/homepage')}>
+        Home
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/aboutus')}>
+        About Us
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/product')}>
+        Products
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/services')}>
+        Services
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/brands')}>
+        Brands
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/industries')}>
+        Industries
+      </Nav.Link>
+      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/contactus')}>
+        Contact Us
+      </Nav.Link>
+    </Nav>
           <Nav>
             {/* <Nav.Link className="px-4">
               <Button

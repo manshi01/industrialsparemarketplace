@@ -1,7 +1,8 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
-import "@/app/assets/zoomable.css";
 import Image from 'react-bootstrap/Image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@/app/assets/zoomable.css';
 
 const images = [
     { src: "/BBL.png", alt: "BBL" },
@@ -13,7 +14,7 @@ const images = [
     { src: "/Siemens.png", alt: "Siemens" }
 ];
 
-const ZoomableImage = () => {
+const Lightbox = () => {
     const [zoomedImageIndex, setZoomedImageIndex] = useState(null);
 
     const handleZoom = (index) => {
@@ -21,15 +22,14 @@ const ZoomableImage = () => {
     };
 
     return (
-        <div className="d-flex gap-5 p-5 m-2 ">
+        <div className="d-flex flex-wrap justify-content-center gap-3 p-3">
             {images.map((image, index) => (
-                <div key={index} onClick={() => handleZoom(index)} className="zoomable-image-wrapper">
+                <div key={index} onClick={() => handleZoom(index)} className={`zoomable-image-wrapper ${zoomedImageIndex === index ? 'zoomed' : ''}`}>
                     <Image
                         src={image.src}
-                        width={200}
-                        height={80}
                         alt={image.alt}
-                        className={`zoomable-image ${zoomedImageIndex === index ? 'zoomed' : ''}`}
+                        className="zoomable-image"
+                        fluid
                     />
                 </div>
             ))}
@@ -37,4 +37,4 @@ const ZoomableImage = () => {
     );
 };
 
-export default ZoomableImage;
+export default Lightbox;
