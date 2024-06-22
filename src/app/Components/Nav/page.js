@@ -21,7 +21,7 @@ export default function Header() {
     <>
       <Navbar className="bg-main py-3 header" collapseOnSelect expand="lg">
         {/* <Container className="m-0 px-4"> */}
-        <Navbar.Brand className="p-0" href="/homepage">
+        <Navbar.Brand className="p-0"  onClick={()=> handleNavigation('/homepage')}>
           <Image
             className="d-block "
             src={"/logo-color.png"}
