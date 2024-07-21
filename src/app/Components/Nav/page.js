@@ -21,7 +21,7 @@ export default function Header() {
     <>
       <Navbar className="bg-main py-3 header" collapseOnSelect expand="lg">
         {/* <Container className="m-0 px-4"> */}
-        <Navbar.Brand className="p-0"  onClick={()=> handleNavigation('/homepage')}>
+        <Nav.Link className="p-0"  onClick={()=> handleNavigation('/homepage')}>
           <Image
             className="d-block "
             src={"/logo-color.png"}
@@ -29,7 +29,7 @@ export default function Header() {
             height={100}
             alt="Picture of the author"
           ></Image>
-        </Navbar.Brand>
+        </Nav.Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
           <FontAwesomeIcon icon={faBars} />
         </Navbar.Toggle>
