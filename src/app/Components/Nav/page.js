@@ -44,25 +44,25 @@ export default function Header() {
             <Nav.Link href="/contactus" className="fw-bold fs-4 ">Contact us </Nav.Link>
           </Nav> */}
               <Nav className="m-auto">
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/homepage')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/homepage')}>
         Home
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/aboutus')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/aboutus')}>
         About Us
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/product')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/product')}>
         Products
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/services')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/services')}>
         Services
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/brands')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/brands')}>
         Brands
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/industries')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/industries')}>
         Industries
       </Nav.Link>
-      <Nav.Link className="fw-bold fs-4" onClick={() => handleNavigation('/contactus')}>
+      <Nav.Link className="fw-bold fs-4" onClick={() => router.push('/contactus')}>
         Contact Us
       </Nav.Link>
     </Nav>
