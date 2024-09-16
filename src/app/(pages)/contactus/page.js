@@ -11,10 +11,10 @@ const ContactUs = () => {
           <h1 className={styles.title}>Contact Us</h1>
           <div className={styles.contactDetails}>
             <p><strong>Industrial Spares Marketplace</strong></p>
-            <p><strong>Address:</strong><br />
+            {/* <p><strong>Address:</strong><br />
               88, Safdarjung Enclave, Humayanpur,<br />
               New Delhi, Delhi, India - 110029
-            </p>
+            </p> */}
             <p><strong>Email:</strong><br />
               <a href="mailto:Info@IndustrialSparesMarketplace.com">Info@IndustrialSparesMarketplace.com</a><br />
               <a href="mailto:IndustrialSparesMarketplace@Gmail.com">IndustrialSparesMarketplace@Gmail.com</a>

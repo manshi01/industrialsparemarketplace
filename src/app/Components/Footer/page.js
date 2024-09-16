@@ -1,195 +1,91 @@
-"use client"
 import React from 'react';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+import Link from 'next/link';
+import { IoMail } from 'react-icons/io5';
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa';
+import styles from './Footer.module.css';
 
-const Footer=() =>{
+const Footer = () => {
   return (
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
-      <MDBContainer className='p-4'>
-        {/* <section className='mb-4'>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='facebook-f' />
-          </MDBBtn>
+    <footer className={`${styles.fott} text-white py-5`}>
+      <div className="container">
+        <div className={`row ${styles.fot}`}>
+          {/* Company Section */}
+          <div className="col-md-2">
+            <h5 className={styles.sectionTitle}>Company</h5>
+            <ul className={styles.list}>
+              <li className={styles.listItem}><Link className={styles.link} href="/homepage">Home</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/aboutus">About Us</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/product">Products</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/services">Services</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/brands">Brands</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/industries">Industries</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/contactus">Contact Us</Link></li>
+            </ul>
+          </div>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='twitter' />
-          </MDBBtn>
+          {/* Products Section */}
+          <div className="col-md-3">
+            <h5 className={styles.sectionTitle}>Products</h5>
+            <ul className={styles.list} id={styles.bb}>
+              <li className={styles.listItem}>Pumps & Spares</li>
+              <li className={styles.listItem}>Gearboxes & Spares</li>
+              <li className={styles.listItem}>Motors & Spares</li>
+              <li className={styles.listItem}>Valves & Spares</li>
+              <li className={styles.listItem}>Electrical Spares</li>
+              <li className={styles.listItem}>Mechanical Spares</li>
+              <li className={styles.listItem}>I&C Spares</li>
+              <li className={styles.listItem}>Other Spare Parts</li>
+            </ul>
+          </div>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
-          </MDBBtn>
+          {/* Services Section */}
+          <div className="col-md-2">
+            <h5 className={styles.sectionTitle}>Our Services</h5>
+            <ul className={styles.list}>
+              <li className={styles.listItem}><Link className={styles.link} href="/services">Service 1</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/services">Service 2</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/services">Service 3</Link></li>
+            </ul>
+          </div>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
+          {/* Policies Section */}
+          <div className="col-md-2">
+            <h5 className={styles.sectionTitle}>Our Policies</h5>
+            <ul className={styles.list}>
+              <li className={styles.listItem}><Link className={styles.link} href="/privacy-policy">Privacy Policy</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/terms-conditions">Terms & Conditions</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/shipping-policy">Shipping Policy</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/return-policy">Return & Refund Policy</Link></li>
+              <li className={styles.listItem}><Link className={styles.link} href="/support">Customer Support</Link></li>
+            </ul>
+          </div>
 
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-        </section> */}
-
-        <section className=''>
-          <form action=''>
-            <MDBRow className='d-flex justify-content-center'>
-              <MDBCol size="auto">
-                <p className='pt-2'>
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </MDBCol>
-
-              <MDBCol md='5' start>
-                <MDBInput contrast type='email' placeholder='Enter your email' className='mb-4' />
-              </MDBCol>
-
-              <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
-                  Subscribe
-                </MDBBtn>
-              </MDBCol>
-            </MDBRow>
-          </form>
-        </section>
-
-        {/* <section className='mb-4'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-
-        <section className=''>
-          <MDBRow>
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-          </MDBRow>
-        </section> */}
-      </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+          {/* Quote and Social Media Section */}
+          <div className="col-md-3">
+            <h5 className={styles.sectionTitle}>Contact Us</h5>
+            <a href="https://forms.gle/aAknas4Var858KqN9" target="_blank" rel="noopener noreferrer">
+              <button className="btn btn-light my-2" id={styles.abc}>Request For Quote</button>
+            </a>
+            <h6 className="mt-4">Follow Us</h6>
+            <div className="d-flex justify-content-start gap-3">
+              <IoMail className={styles.socialIcon} />
+              <FaFacebook className={styles.socialIcon} />
+              <FaInstagram className={styles.socialIcon} />
+              <FaLinkedinIn className={styles.socialIcon} />
+              <FaTwitter className={styles.socialIcon} />
+              <FaYoutube className={styles.socialIcon} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.footerBottom}>
         © 2024 Copyright:
-        <a className='text-white' href='https://industrialsparesmarketplace.com/'>
+        <a className={styles.link} href="https://industrialsparesmarketplace.com/" target="_blank" rel="noopener noreferrer">
           industrialsparesmarketplace.com
         </a>
       </div>
-    </MDBFooter>
+    </footer>
   );
-}
+};
+
 export default Footer;

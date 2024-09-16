@@ -1,0 +1,80 @@
+/* Footer.module.css */
+.fott {
+  background-color: #333; /* Dark background color */
+  color: white;
+}
+
+.fot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #fbbf24;  */
+}
+
+.list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.link {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.link:hover {
+  color: #0000ff; /* Blue color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#bb li {
+  color: white;
+}
+
+#abc {
+  background-color: #fbbf24;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#abc:hover {
+  background-color: #0000ff; /* Blue button on hover */
+  color: white; /* White text on hover */
+}
+
+.socialIcon {
+  color: #fbbf24;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #0000ff; /* Blue icon color on hover */
+}
+
+.footerBottom {
+  background-color: #222; /* Slightly darker shade for the bottom section */
+  padding: 15px 0;
+  text-align: center;
+  color: #aaa; /* Lighter text color for copyright */
+}
+
+.footerBottom a {
+  color: #fbbf24; /* Brighter color for the link */
+  text-decoration: none; /* Remove underline */
+}
+
+.footerBottom a:hover {
+  color: #0000ff; /* Blue link color on hover */
+}
